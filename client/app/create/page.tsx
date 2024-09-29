@@ -69,11 +69,15 @@ const CreatePage = () => {
   const handleChange = (value: any, event: any, type: number) => {
     type === 0 ? setstartTime(value) : setendTime(value);
   };
+
+
   return (
     <div className="min-h-screen w-full overflow-auto rounded-2xl bg-white flex items-center justify-center">
+
+      
       <div className="w-[50%] mx-4 px-6 lg:px-8 flex my-8 flex-col">
         <div className="w-full">
-          <p className="my-4 text-lg font-bold tracking-tight text-gray-900 sm:text-xl">
+          <p className="my-4 text-3xl font-bold tracking-tight text-gray-900">
             Create Election
           </p>
         </div>
@@ -91,16 +95,16 @@ const CreatePage = () => {
               Name
             </label>
           </div>
-          <div className="relative gap-y-1 z-0 w-full mb-5 group">
+          <div className="relative gap-y-2 z-0 w-full mb-5 group">
             <textarea
               rows={4}
               name="description"
               placeholder=" "
               id="description"
-              className="block lg:max-h-48 max-h-24 h-12 min-h-12 py-2.5 my-4 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none    focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              className="block lg:max-h-48 max-h-24 h-12 py-6 my-4 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none    focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             ></textarea>
-            <label className="peer-focus:font-medium absolute my-1 text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
-              Descriptions
+            <label className="peer-focus:font-medium absolute my-1 mb-2 text-sm text-gray-500  duration-300 transform -translate-y-1 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+              Description
             </label>
           </div>
           <div className="relative gap-y-1 z-0 w-full mb-5 group">
@@ -178,5 +182,10 @@ const CreatePage = () => {
     </div>
   );
 };
+
+
+// https://www.behance.net/gallery/206505055/Contact-Form-UI-Design?tracking_source=search_projects_recommended|Form+UI+Design&l=27
+// Redefine the entire UI design similar to the above design
+
 
 export default CreatePage;

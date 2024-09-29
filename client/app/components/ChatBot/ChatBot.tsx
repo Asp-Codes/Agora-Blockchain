@@ -59,7 +59,7 @@ const ChatBot = () => {
   }, [messages]);
 
   return (
-    <div className="fixed bottom-1 left-3 z-10 p-2">
+    <div className="fixed bottom-1 right-3 z-10 p-2 pr-8 pb-4">
       <div className="dropdown dropdown-top ">
         <div
           tabIndex={0}

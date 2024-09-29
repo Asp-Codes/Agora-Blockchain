@@ -1,10 +1,11 @@
 import React from "react";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import "@rainbow-me/rainbowkit/styles.css";
+import { backIn } from "framer-motion";
 const Web3Connect = () => {
   return (
-    <div className="fixed z-30 right-3 top-3 p-4">
-      <ConnectButton
+    <div className="z-30" style={{ backgroundColor: "transparent" }}>
+      <ConnectButton 
         accountStatus={{
           smallScreen: "avatar",
           largeScreen: "full",
